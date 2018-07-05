@@ -1,0 +1,615 @@
+.start-screen {
+  min-width: 100%;
+  height: 100%;
+  position: relative;
+  padding-bottom: 20px;
+}
+.start-screen-title {
+  position: fixed;
+  top: 20px;
+  left: 80px;
+  display: none;
+}
+[class*=tile-] {
+  transform: scale(0.8);
+}
+.tiles-group {
+  margin-left: 0;
+  margin-top: 50px;
+}
+
+/* The switch */
+.cube-switch .switch {
+    border:1px solid rgba(0,0,0,0.6);
+    border-radius:0.7em;
+    box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.3),
+    inset 0 -7px 0 rgba(0,0,0,0.2),
+    inset 0 50px 10px rgba(0,0,0,0.2),
+    0 1px 0 rgba(255,255,255,0.2);
+    display:block;
+    width: 50px;
+    height: 50px;
+    margin-left:-25px;
+    margin-top:5px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    background:#666;
+    transition: all 0.2s ease-out;
+
+    /* Allows click */
+    cursor:pointer;
+    pointer-events:auto;
+}
+
+/* SWITCH Active State */
+.cube-switch.active {
+    /*background:#222;
+    box-shadow:
+    0 0 5px rgba(0,0,0,0.5),
+    inset 0 50px 50px rgba(55,55,55,0.1);*/
+}
+
+.cube-switch.active .switch {
+    background:#333;
+    box-shadow:
+    inset 0 6px 0 rgba(255,255,255,0.1),
+    inset 0 7px 0 rgba(0,0,0,0.2),
+    inset 0 -50px 10px rgba(0,0,0,0.1),
+    0 1px 0 rgba(205,205,205,0.1);
+}
+
+.cube-switch.active:after,
+.cube-switch.active:before {
+    background:#333; 
+    box-shadow:
+    0 1px 0 rgba(255,255,255,0.1),
+    inset 1px 2px 1px rgba(0,0,0,0.5),
+    inset 3px 6px 2px rgba(200,200,200,0.1),
+    inset -1px -2px 1px rgba(0,0,0,0.3);
+}
+
+.cube-switch.active .switch:after,
+.cube-switch.active .switch:before {
+    background:#222;
+    border:none;
+    margin-top:0;
+    height:1px;
+}
+
+.cube-switch .switch-state {
+    display: block;
+    position: absolute;
+    left: 40%;
+    color: #FFF;
+
+    font-size: .5em;
+    text-align: center;
+}
+
+/* SWITCH On State */
+.cube-switch .switch-state.on {
+    bottom: 15%;
+}
+
+/* SWITCH Off State */
+.cube-switch .switch-state.off {
+    top: 15%;
+}
+
+
+/* The switch 1 */
+.cube-switch1 .switch1 {
+    border:1px solid rgba(0,0,0,0.6);
+    border-radius:0.7em;
+    box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.3),
+    inset 0 -7px 0 rgba(0,0,0,0.2),
+    inset 0 50px 10px rgba(0,0,0,0.2),
+    0 1px 0 rgba(255,255,255,0.2);
+    display:block;
+    width: 150px;
+    height: 50px;
+    margin-left:-25px;
+    margin-top:5px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+ 
+    background:#666;
+    transition: all 0.2s ease-out;
+
+    /* Allows click */
+    cursor:pointer;
+    pointer-events:auto;
+}
+
+/* SWITCH Active State */
+.cube-switch1.active {
+    /*background:#222;
+    box-shadow:
+    0 0 5px rgba(0,0,0,0.5),
+    inset 0 50px 50px rgba(55,55,55,0.1);*/
+}
+
+.cube-switch1.active .switch1 {
+    background:#333;
+    box-shadow:
+    inset 0 6px 0 rgba(255,255,255,0.1),
+    inset 0 7px 0 rgba(0,0,0,0.2),
+    inset 0 -50px 10px rgba(0,0,0,0.1),
+    0 1px 0 rgba(205,205,205,0.1);
+}
+
+.cube-switch1.active:after,
+.cube-switch1.active:before {
+    background:#333; 
+    box-shadow:
+    0 1px 0 rgba(255,255,255,0.1),
+    inset 1px 2px 1px rgba(0,0,0,0.5),
+    inset 3px 6px 2px rgba(200,200,200,0.1),
+    inset -1px -2px 1px rgba(0,0,0,0.3);
+}
+
+.cube-switch1.active .switch:after,
+.cube-switch1.active .switch:before {
+    background:#222;
+    border:none;
+    margin-top:0;
+    height:1px;
+}
+
+.cube-switch1 .switch-state {
+    display: block;
+    position: absolute;
+    left: 40%;
+    color: #FFF;
+
+    font-size: .5em;
+    text-align: center;
+}
+
+/* SWITCH On State */
+.cube-switch1 .switch-state.on1 {
+    bottom: 15%;
+}
+
+/* SWITCH Off State */
+.cube-switch1 .switch-state.off1 {
+    top: 15%;
+}
+
+
+/* The switch 2 */
+.cube-switch2 .switch2 {
+    border:1px solid rgba(0,0,0,0.6);
+    border-radius:0.7em;
+    box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.3),
+    inset 0 -7px 0 rgba(0,0,0,0.2),
+    inset 0 50px 10px rgba(0,0,0,0.2),
+    0 1px 0 rgba(255,255,255,0.2);
+    display:block;
+    width: 50px;
+    height: 50px;
+    margin-left:-25px;
+    margin-top:5px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+ 
+    background:#666;
+    transition: all 0.2s ease-out;
+
+    /* Allows click */
+    cursor:pointer;
+    pointer-events:auto;
+}
+
+/* SWITCH Active State */
+.cube-switch2.active {
+    /*background:#222;
+    box-shadow:
+    0 0 5px rgba(0,0,0,0.5),
+    inset 0 50px 50px rgba(55,55,55,0.1);*/
+}
+
+.cube-switch2.active .switch2 {
+    background:#333;
+    box-shadow:
+    inset 0 6px 0 rgba(255,255,255,0.1),
+    inset 0 7px 0 rgba(0,0,0,0.2),
+    inset 0 -50px 10px rgba(0,0,0,0.1),
+    0 1px 0 rgba(205,205,205,0.1);
+}
+
+.cube-switch2.active:after,
+.cube-switch2.active:before {
+    background:#333; 
+    box-shadow:
+    0 1px 0 rgba(255,255,255,0.1),
+    inset 1px 2px 1px rgba(0,0,0,0.5),
+    inset 3px 6px 2px rgba(200,200,200,0.1),
+    inset -1px -2px 1px rgba(0,0,0,0.3);
+}
+
+.cube-switch2.active .switch:after,
+.cube-switch2.active .switch:before {
+    background:#222;
+    border:none;
+    margin-top:0;
+    height:1px;
+}
+
+.cube-switch2 .switch-state {
+    display: block;
+    position: absolute;
+    left: 40%;
+    color: #FFF;
+
+    font-size: .5em;
+    text-align: center;
+}
+
+/* SWITCH On State */
+.cube-switch2 .switch-state.on2 {
+    bottom: 15%;
+}
+
+/* SWITCH Off State */
+.cube-switch2 .switch-state.off2 {
+    top: 15%;
+}
+
+
+/* The switch 3 */
+.cube-switch4 .switch4 {
+    border:1px solid rgba(0,0,0,0.6);
+    border-radius:0.7em;
+    box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.3),
+    inset 0 -7px 0 rgba(0,0,0,0.2),
+    inset 0 50px 10px rgba(0,0,0,0.2),
+    0 1px 0 rgba(255,255,255,0.2);
+    display:block;
+    width: 50px;
+    height: 50px;
+    margin-left:-25px;
+    margin-top:5px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+ 
+    background:#666;
+    transition: all 0.2s ease-out;
+
+    /* Allows click */
+    cursor:pointer;
+    pointer-events:auto;
+}
+
+/* SWITCH Active State */
+.cube-switch4.active {
+    /*background:#222;
+    box-shadow:
+    0 0 5px rgba(0,0,0,0.5),
+    inset 0 50px 50px rgba(55,55,55,0.1);*/
+}
+
+.cube-switch4.active .switch4 {
+    background:#333;
+    box-shadow:
+    inset 0 6px 0 rgba(255,255,255,0.1),
+    inset 0 7px 0 rgba(0,0,0,0.2),
+    inset 0 -50px 10px rgba(0,0,0,0.1),
+    0 1px 0 rgba(205,205,205,0.1);
+}
+
+.cube-switch4.active:after,
+.cube-switch4.active:before {
+    background:#333; 
+    box-shadow:
+    0 1px 0 rgba(255,255,255,0.1),
+    inset 1px 2px 1px rgba(0,0,0,0.5),
+    inset 3px 6px 2px rgba(200,200,200,0.1),
+    inset -1px -2px 1px rgba(0,0,0,0.3);
+}
+
+.cube-switch4.active .switch:after,
+.cube-switch4.active .switch:before {
+    background:#222;
+    border:none;
+    margin-top:0;
+    height:1px;
+}
+
+.cube-switch4 .switch-state {
+    display: block;
+    position: absolute;
+    left: 40%;
+    color: #FFF;
+
+    font-size: .5em;
+    text-align: center;
+}
+
+/* SWITCH On State */
+.cube-switch4 .switch-state.on4 {
+    bottom: 15%;
+}
+
+/* SWITCH Off State */
+.cube-switch4 .switch-state.off4 {
+    top: 15%;
+}
+
+
+#light-bulb2 {
+width: 150px;
+height: 150px;
+background: url(https://lh4.googleusercontent.com/-katLGTSCm2Q/UJC0_N7XCrI/AAAAAAAABq0/6GxNfNW-Ra4/s300/lightbulb.png) no-repeat 0 0;
+}
+
+#light-bulb {
+position: absolute;
+width: 150px;
+height: 150px;
+top: 5%;
+left: %;
+background: url(https://lh4.googleusercontent.com/-katLGTSCm2Q/UJC0_N7XCrI/AAAAAAAABq0/6GxNfNW-Ra4/s300/lightbulb.png) no-repeat -150px 0;
+cursor: move;
+z-index: 800;
+}
+
+#light-bulb21 {
+width: 150px;
+height: 150px;
+background: url(https://lh4.googleusercontent.com/-katLGTSCm2Q/UJC0_N7XCrI/AAAAAAAABq0/6GxNfNW-Ra4/s300/lightbulb.png) no-repeat 0 0;
+}
+
+#light-bulb1 {
+position: absolute;
+width: 150px;
+height: 150px;
+top: 5%;
+left: %;
+background: url(https://lh4.googleusercontent.com/-katLGTSCm2Q/UJC0_N7XCrI/AAAAAAAABq0/6GxNfNW-Ra4/s300/lightbulb.png) no-repeat -150px 0;
+cursor: move;
+z-index: 800;
+}
+
+#light-bulb31 {
+width: 150px;
+height: 150px;
+background: url(https://lh4.googleusercontent.com/-katLGTSCm2Q/UJC0_N7XCrI/AAAAAAAABq0/6GxNfNW-Ra4/s300/lightbulb.png) no-repeat 0 0;
+}
+
+#light-bulb3 {
+position: absolute;
+width: 150px;
+height: 150px;
+top: 5%;
+left: %;
+background: url(https://lh4.googleusercontent.com/-katLGTSCm2Q/UJC0_N7XCrI/AAAAAAAABq0/6GxNfNW-Ra4/s300/lightbulb.png) no-repeat -150px 0;
+cursor: move;
+z-index: 800;
+}
+
+#light-bulb41 {
+width: 150px;
+height: 150px;
+background: url(https://lh4.googleusercontent.com/-katLGTSCm2Q/UJC0_N7XCrI/AAAAAAAABq0/6GxNfNW-Ra4/s300/lightbulb.png) no-repeat 0 0;
+}
+
+#light-bulb4 {
+position: absolute;
+width: 150px;
+height: 150px;
+top: 5%;
+left: %;
+background: url(https://lh4.googleusercontent.com/-katLGTSCm2Q/UJC0_N7XCrI/AAAAAAAABq0/6GxNfNW-Ra4/s300/lightbulb.png) no-repeat -150px 0;
+cursor: move;
+z-index: 800;
+}
+
+
+/*----------------------*/
+/*----kitchen style-----*/
+/*----------------------*/
+
+
+/*--raised button--*/
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+.md-btn {
+  font-family: "Roboto medium", sans-serif;
+  font-size: 14px;
+  display: inline-block;
+  height: 34px;
+  min-width: 34px;
+  padding: 4px 14px;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 0;
+  border-radius: 40px;
+  background: #2196f3;
+  color: #fff;
+  outline: 0;
+}
+.md-btn:focus {
+  background: #0b76cc;
+}
+
+.md-btn-raised {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.md-btn-raised:active {
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+}
+
+/*
+ Ripple
+*/
+.md-btn-ripple {
+  overflow: hidden;
+  position: relative;
+}
+
+.md-btn-ripple:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 120px;
+  height: 120px;
+  margin-left: -60px;
+  margin-top: -60px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 100%;
+  transform: scale(0);
+}
+
+@keyframes md-btn-ripple {
+  0% {
+    transform: scale(0);
+  }
+  20% {
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+.md-btn-ripple:not(:active):after {
+  animation: md-btn-ripple 0.6s ease-out;
+}
+
+.md-btn-ripple:after {
+  visibility: hidden;
+}
+
+.md-btn-ripple:focus:after {
+  visibility: visible;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+section {
+  left:47px;
+  bottom: 90px;
+  text-align: center;
+}
+
+/*----------------------*/
+/*----Hall toggle button----*/
+/*----------------------*/
+
+.toggle-btn {
+  width: 80px;
+  height: 40px;
+  margin: 10px;
+  border-radius: 50px;
+  display: inline-block;
+  position: relative;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAyklEQVQ4T42TaxHCQAyENw5wAhLACVUAUkABOCkSwEkdhNmbpHNckzv689L98toIAKjqGcAFwElEFr5ln6ruAMwA7iLyFBM/TPDuQSrxwf6fCKBoX2UMIYGYkg8BLOnVg2RiAEexGaQQq4w9e9klcxGLLAUwgDAcihlYAR1IvZA1sz/+AAaQjXhTQQVoe2Yo3E7UQiT2ijeQdojRtClOfVKvMVyVpU594kZK9zzySWTlcNqZY9tjCsUds00+A57z1e35xzlzJjee8xf0HYp+cOZQUQAAAABJRU5ErkJggg==") no-repeat 50px center #e74c3c;
+  cursor: pointer;
+  -webkit-transition: background-color .40s ease-in-out;
+  -moz-transition: background-color .40s ease-in-out;
+  -o-transition: background-color .40s ease-in-out;
+  transition: background-color .40s ease-in-out;
+  cursor: pointer;
+}
+.toggle-btn.active {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAmUlEQVQ4T6WT0RWDMAhFeZs4ipu0mawZpaO4yevBc6hUIWLNd+4NeQDk5sE/PMkZwFvZywKSTxF5iUgH0C4JHGyF97IggFVSqyCFga0CvQSg70Mdwd8QSSr4sGBMcgavAgdvwQCtApvA2uKr1x7Pu++06ItrF5LXPB/CP4M0kKTwYRIDyRAOR9lJTuF0F0hOAJbKopVHOZN9ACS0UgowIx8ZAAAAAElFTkSuQmCC") no-repeat 10px center #2ecc71;
+}
+.toggle-btn.active .round-btn {
+  left: 45px;
+}
+.toggle-btn .round-btn {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  margin-top: -15px;
+  -webkit-transition: all .30s ease-in-out;
+  -moz-transition: all .30s ease-in-out;
+  -o-transition: all .30s ease-in-out;
+  transition: all .30s ease-in-out;
+}
+.toggle-btn .cb-value {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 9;
+  cursor: pointer;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+.toggle-btn {
+  left:100px;
+  bottom:45px;
+}
+
+/*----------------------*/
+/*----Sensors style-----*/
+/*----------------------*/
+
+.branding-bar1{
+  margin-bottom: 70px;
+  margin-right: 60px;
+  font-size: 30px;
+}
+
+/*----------------------*/
+/*----bottom button-----*/
+/*----------------------*/
+.backbutton{
+  width: 310px;
+  height: 35px;
+  font-size: .875rem;
+  margin-top: 10px;
+  bottom: 10px;
+  padding: 5px 110px;
+}
+/*.kitchen{
+  width: 310px;
+  height: 35px;
+  font-size: .875rem;
+  margin-top: 10px;
+  bottom: 10px;
+  padding: 12px 0px 0px 130px;
+}
+.sensors{
+  width: 310px;
+  height: 35px;
+  font-size: .875rem;
+  margin-top: 50px;
+  padding: 7px 110px;
+}
+
+

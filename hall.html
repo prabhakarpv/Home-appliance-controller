@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+
+    <link href="../../metro/css/metro-all.css" rel="stylesheet">
+    <link href="start.css" rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Hall</title>
+</head>
+<style>
+i{
+    margin-left: 125px;
+	margin-top: 50px;
+    font-size: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+</style>
+<body class="bg-dark fg-white">
+
+    <div class="container-fluid start-screen no-overflow">
+        <!-- <h1 class="start-screen-title">Start</h1> -->
+		
+        <div class="tiles-area">
+            <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="Hall">
+                
+				<a href="hall.html" data-role="tile" class="bg-orange fg-white" data-size="wide">
+                    <img src="../../images/temperature.jpg">
+                    <span class="branding-bar">Home Temperature</span>
+                </a>
+				
+				<div data-role="tile" class="bg-cyan fg-white">
+                    <div id="light-bulb" class="off ui-draggable" ><div id="light-bulb2" style="opacity: 0; "></div></div>
+                    <span class="branding-bar">Switch 1</span>
+                    <!-- <span class="badge-bottom">4</span> -->
+                </div>
+				
+				<div data-role="tile" class="bg-cyan fg-white">
+                    <div id="light-bulb1" class="off ui-draggable" ><div id="light-bulb21" style="opacity: 0; "></div></div>
+                    <span class="branding-bar">Switch 2</span>
+                    <!-- <span class="badge-bottom">4</span> -->
+                </div>
+				
+				<a href="#" data-role="tile" class="bg-indigo fg-white">
+                    <div id="light-bulb3" class="off ui-draggable" ><div id="light-bulb31" style="opacity: 0; "></div></div>
+                    <span class="branding-bar">Switch 3</span>
+                    <!-- <span class="badge-bottom">12</span> -->
+                </a>
+                <div data-role="tile" class="bg-cyan fg-white">
+                    <div id="light-bulb4" class="off ui-draggable" ><div id="light-bulb41" style="opacity: 0; "></div></div>
+                    <span class="branding-bar">Switch 4</span>
+                    <!-- <span class="badge-bottom">4</span> -->
+                </div>
+                
+                <div data-role="tile" data-size="small">
+                    <div href="" class="cube-switch">
+						<span class="switch">
+						<span class="switch-state off">Off</span>
+						<span class="switch-state on">On</span>
+						</span>
+					</div>
+					
+					<span class="branding-bar1">Switch 1</span>
+                </div>
+                <div data-role="tile" data-size="small" class="bg-red fg-white">
+                     <div href="" class="cube-switch1">
+						<span class="switch1">
+						<span class="switch-state off1">Off</span>
+						<span class="switch-state on1">On</span>
+						</span>
+					</div>
+					<span class="branding-bar1">Switch 2</span>
+                </div>
+                <div data-role="tile" data-size="small" class="bg-teal fg-white">
+                     <div href="" class="cube-switch2">
+						<span class="switch2">
+						<span class="switch-state off2">Off</span>
+						<span class="switch-state on2">On</span>
+						</span>
+					</div>
+					<span class="branding-bar1">Switch 3</span>
+                </div>
+                <div data-role="tile" data-size="small" class="bg-brown fg-white">
+                   <div href="" class="cube-switch4">
+						<span class="switch4">
+						<span class="switch-state off4">Off</span>
+						<span class="switch-state on4">On</span>
+						</span>
+					</div>
+
+					<span class="branding-bar1">Switch 4</span>
+                </div>
+            
+        
+
+               <!--bottom button-->
+
+                <a href="start.html">
+                    <div  data-role="tile" data-size="wide" class="backbutton bg-blue fg-white">Back To Home</div>
+                </a>
+               
+               <!--bottom button-->
+           
+                 
+               
+                
+				
+				
+				
+               <!--<div data-role="tile" class="bg-cyan fg-white">
+					<img src="../../images/bathroom.jpg">
+                    
+                    <span class="branding-bar">Tables</span>
+                </div> 
+               <!---->
+            
+            </div>
+            <!-- <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="Kitchen">
+                <div data-role="tile" data-cover="../../images/me.jpg">
+                    <span class="branding-bar">Sergey Pimenov</span>
+                </div>
+                <div data-role="tile" data-effect="animate-fade" data-effect-duration="1000">
+                    <div class="slide" data-cover="../../images/me2.jpg"></div>
+                    <div class="slide" data-cover="../../images/me.jpg"></div>
+                    <div class="slide" data-cover="../../images/me3.jpg"></div>
+                    <span class="branding-bar">Gallery</span>
+                </div>
+                <div data-role="tile" data-size="wide" data-effect="animate-slide-left">
+                    <div class="slide" data-cover="../../images/1.jpg"></div>
+                    <div class="slide" data-cover="../../images/2.jpg"></div>
+                    <div class="slide" data-cover="../../images/3.jpg"></div>
+                    <div class="slide" data-cover="../../images/4.jpg"></div>
+                    <div class="slide" data-cover="../../images/5.jpg"></div>
+                    <span class="branding-bar">Gallery</span>
+                </div>
+                <div data-role="tile" data-size="wide" data-effect="image-set">
+                    <img src="../../images/jeki_chan.jpg">
+                    <img src="../../images/shvarcenegger.jpg">
+                    <img src="../../images/vin_d.jpg">
+                    <img src="../../images/jolie.jpg">
+                    <img src="../../images/jek_vorobey.jpg">
+                </div 
+            </div> -->
+
+            <!-- <div class="tiles-grid tiles-group size-1 fg-white" data-group-title="Office">
+                <div data-role="tile" data-size="small">
+                    <img src="../../images/outlook.png" class="icon">
+                </div>
+                <div data-role="tile" data-size="small" class="bg-brown">
+                    <img src="../../images/word.png" class="icon">
+                </div>
+                <div data-role="tile" data-size="small" class="bg-green">
+                    <img src="../../images/excel.png" class="icon">
+                </div>
+                <div data-role="tile" data-size="small" class="bg-red">
+                    <img src="../../images/access.png" class="icon">
+                </div>
+                <div data-role="tile" data-size="small" class="bg-teal">
+                    <img src="../../images/powerpoint.png" class="icon">
+                </div>
+            </div> -->
+
+            <!-- <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="Games">
+                <div data-role="tile" data-cover="../../images/Battlefield_4_Icon.png">
+                    <span class="branding-bar">Battlefield 4</span>
+                </div>
+                <div data-role="tile" class="bg-green">
+                    <img src="../../images/x-box.png" class="icon">
+                    <span class="branding-bar">XBOX ONE</span>
+                </div>
+                <div data-role="tile" data-size="wide" data-cover="../../images/x-box.png">
+                    <span class="branding-bar">XBOX LIVE</span>
+                    <span class="badge-top">5</span>
+                </div>
+            </div> -->
+     </div>
+    </div>
+
+
+    <script src="../../js/jquery-3.3.1.min.js"></script>
+    <script src="../../metro/js/metro.js"></script>
+    <script src="start.js"></script>
+
+</body>
+</html>
